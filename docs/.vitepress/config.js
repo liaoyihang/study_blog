@@ -2,7 +2,7 @@ export default {
   lang: 'en-US',
   title: '汉堡学堂',
   description: '',
-  base: '/study_blog/',
+  base: '/study_blog.github.io/',
   themeConfig: {
     nav: [
       { text: '导航栏选项一', link: '/guide', activeMatch: '/guide/what-is-vitepress' },
