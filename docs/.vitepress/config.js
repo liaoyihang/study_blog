@@ -21,18 +21,41 @@ export default {
         text: 'JS基础',
         items: [
           { text: 'JS数据类型', link: '/guide/js/data-type' },
+          { text: '原型与原型链', link: '/guide/js/prototype' },
         ]
       },
       {
-        text: 'Vue',
+        text: 'Vue3',
         items: [
-          { text: 'test', link: '/guide/vue/test' },
+          { text: '响应式基础', link: '/guide/vue/reactive' },
         ]
       },
       {
-        text: '其他小研究',
+        text: '宿主环境',
         items: [
-          { text: '图片懒加载', link: '/guide/other/img-lazy' },
+          { text: 'V8垃圾回收机制(简易版)', link: '/guide/environment/garbage-collection-easy' },
+          { text: '浏览器渲染原理', link: '/guide/environment/browser-render' },
+          { text: '事件循环', link: '/guide/environment/event-loop' },
+        ]
+      },
+      {
+        text: '性能研究',
+        items: [
+          { text: '图片懒加载', link: '/guide/performance/img-lazy' },
+          { text: '虚拟列表', link: '/guide/performance/virtual-list' },
+          { text: '分片渲染', link: '/guide/performance/slice-render' },
+        ]
+      },
+      {
+        text: '网络通信',
+        items: [
+          { text: 'Ajax', link: '/guide/network/ajax' },
+        ]
+      },
+      {
+        text: '其他',
+        items: [
+          { text: 'AST抽象语法树', link: '/guide/other/ast' },
         ]
       }
     ],
