@@ -17,18 +17,24 @@ export default {
       }
     ],
     sidebar: [
-        {
-          text: 'Vue',
-          items: [
-            { text: 'test', link: '/guide/vue/test' },
-          ]
-        },
-        {
-            text: '其他小研究',
-            items: [
-              { text: '图片懒加载', link: '/guide/other/img-lazy' },
-          ]
-        }
-      ],
+      {
+        text: 'JS基础',
+        items: [
+          { text: 'JS数据类型', link: '/guide/js/data-type' },
+        ]
+      },
+      {
+        text: 'Vue',
+        items: [
+          { text: 'test', link: '/guide/vue/test' },
+        ]
+      },
+      {
+        text: '其他小研究',
+        items: [
+          { text: '图片懒加载', link: '/guide/other/img-lazy' },
+        ]
+      }
+    ],
   }
 };
