@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 进入日志
-      link: /guide/vue/test
+      link: /guide/js/data-type
     - theme: alt
       text: 进入GitHub
       link: https://github.com/liaoyihang

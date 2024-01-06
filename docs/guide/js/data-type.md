@@ -17,13 +17,46 @@ JS的数据类型存在以下两个特点：
 
 ## 类型检测
 1. typeof 运算符返回一个字符串，表示操作数的类型。能识别 Number、String、Boolean、Undefined、Function、Object。
-2. instanceof 运算符用于检测构造函数的 prototype 属性是否出现在某个实例对象的原型链上。只能判断实例对象。
+```javascript
+console.log(typeof 1); // number
+console.log(typeof 'sss'); // string
+console.log(typeof true); // boolean
+console.log(typeof undefined); // undefined
+console.log(typeof (() => {})); // function
+console.log(typeof null); // object
+console.log(typeof {}); // object
+console.log(typeof []); // object
+```
+2. instanceof 运算符用于检测构造函数的 prototype 属性是否出现在某个实例对象的原型链上。只能判断实例对象，且结果不够精确。
+```javascript
+console.log([] instanceof Array); // true
+console.log([] instanceof Object); // true
+console.log(1 instanceof Number); // false
+```
 3. constructor 是对象原型下一个属性，存放创建该实例对象的构造函数。无法判断 null 和 undefined ，而且 constructor 是可以修改的，会导致检查结果不准确。
+```javascript
+const arr = [];
+console.log(arr.constructor === Array); // true
+arr.constructor = String;
+console.log(arr.constructor === Array); // false
+console.log(arr.constructor === String); // true
+```
 4. Object.prototype.toString 是对象原型下的方法，返回固定字符串格式为 "[object 类型]"。是最通用最准确的类型检测方法。
+```javascript
+console.log(Object.prototype.toString.call(1)); //[object Number]
+console.log(Object.prototype.toString.call('sa')); // [object String]
+console.log(Object.prototype.toString.call(true)); // [object Boolean]
+console.log(Object.prototype.toString.call(null)); // [object Null]
+console.log(Object.prototype.toString.call(undefined)); // [object Undefined]
+console.log(Object.prototype.toString.call(10n)); // [object BigInt]
+console.log(Object.prototype.toString.call([])); // [object Array]
+console.log(Object.prototype.toString.call({})); // [object Object]
+console.log(Object.prototype.toString.call(()=>{})); // [object Function]
+```
 
 ## 类型转换
-由于JS的弱类型特点，意味着经常可以使用与预期类型不同类型的值，并且将为你转换它为正确的类型。
-#### 数字强制转换
+由于JS的***弱类型***特点，意味着经常可以使用与预期类型不同类型的值，并将其转换为符合上下文的类型。但不是随意转换的，而是根据对应的***规则***进行类型转换
+#### 1. 数字强制转换
 数字包含两种数据类型，Number和BigInt，二者的强制转换近乎一致，如果是 Number 强制转化：
 - Number 将原样返回
 - undefined 转换 NaN
@@ -38,7 +71,7 @@ JS的数据类型存在以下两个特点：
 
 如果是 BigInt 强制转换，则将 BigInt 原样返回，Number 抛出 TypeError。  
 如果是数字强制转换，则将 BigInt 和 Number 都原样返回
-#### 字符串强制转换
+#### 2. 字符串强制转换
 - 字符串按原样返回。
 - undefined 转换成 "undefined"。
 - null 转换成 "null"。
@@ -47,13 +80,13 @@ JS的数据类型存在以下两个特点：
 - 使用与 toString(10) 相同的算法转换 BigInt。
 - Symbol 抛出 TypeError。
 - 对象首先通过依次调用其 \[@@toPrimitive\](string)、toString() 和 valueOf() 方法将其转换为原始值。然后将生成的原始值转换为一个字符串。
-#### 布尔值强制转换
+#### 3. 布尔值强制转换
 - +0、-0、NaN 转换为 false
 - '' 转换为 false
 - null 转换为 false
 - undefined 转换为 false
 - 其他均转换为 true
-#### 原始值强制转换
+#### 4. 原始值强制转换
 如果值已经是原始值，则不会进行原始值强制转换操作，而是根据转换需要执行以上的转换操作  
 如果是对象将依次调用它的 \[@@toPrimitive\](default)、valueOf() 和 toString() 方法，将其转换为原始值。
 
