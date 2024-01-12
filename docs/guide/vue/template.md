@@ -142,9 +142,9 @@ Demo打印结果如下：
 可以看出，是一个虚拟Dom对象。所以我们可以知道，***一个模板，经过一定的处理，最终会变成一个render函数***，而render函数的返回值是一个虚拟Dom。接下来，我们继续研究是什么样的处理，让模板变成函数。
 
 通过对Vue的compiler模块的研究，我们能够发现：
-- ***其先使用parse函数，将模板字符串转换成编译成vue的AST语法树***
-- ***再通过transform函数，将vue的AST语法树转换成JS的AST语法树***
-- ***再通过generate函数，将JS的AST语法树转化成render函数***
+- ***其先使用 parse 函数，将模板字符串转换成编译成 vue 的 AST 语法树***
+- ***再通过 transform 函数，将vue的AST语法树转换成 JS 的 AST 语法树***
+- ***再通过 generate 函数，将JS的AST语法树转化成 render 函数***
 
 简单看一下相关函数的TS
 ```typescript
