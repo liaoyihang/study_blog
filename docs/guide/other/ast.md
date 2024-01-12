@@ -12,6 +12,8 @@ titleTemplate: 其他
 const str = 'AST语法树';
 ```
 一句简单的声明，它的AST语法树也会尽可能全面的去描述该语句
+> 在线解析AST网址：https://astexplorer.net/
+
 <div align=center><img src="./ast_assets/ast_test.png"></div>
 
 ## AST 的转化
@@ -21,3 +23,8 @@ const str = 'AST语法树';
 1. 解析 (Parse)：将原始代码解析为 AST
 2. 转换 (Transform)：遍历源 AST 做转换，生成新的 AST
 3. 生成 (Generate)：遍历新的 AST，生成目标代码
+
+## AST 的应用
+- 语言转换 Babel、Vue模板语法
+- 语法插件 ESlint
+- 打包工具插件 代码压缩、树摇tree-shaking
