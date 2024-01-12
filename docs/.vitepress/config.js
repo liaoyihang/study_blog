@@ -28,7 +28,7 @@ export default {
         text: 'Vue3',
         items: [
           { text: '响应式基础', link: '/guide/vue/reactive' },
-          { text: '$nextTick简单分析', link: '/guide/vue/nextTick' },
+          { text: '$nextTick简单分析', link: '/guide/vue/nexttick' },
           { text: '模板语法原理', link: '/guide/vue/template' },
         ]
       },

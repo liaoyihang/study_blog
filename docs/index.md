@@ -18,9 +18,9 @@ hero:
 
 features:
   - icon: ⚡️
-    title: 暂时没有
-    details: 暂时没有
-    link: 
+    title: Vue模板语法
+    details: 模板语法的原理，模板转换成render函数的过程
+    link: /guide/vue/template
 
   - icon: 🖖
     title: 暂时没有
