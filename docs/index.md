@@ -23,9 +23,9 @@ features:
     link: /guide/vue/template
 
   - icon: 🖖
-    title: 暂时没有
-    details: 暂时没有
-    link: 
+    title: 浮点数原理
+    details: 从浮点数存储去研究浮点数精度丢失的原因
+    link: /guide/js/decimal
 
   - icon: 🛠️
     title: 暂时没有
