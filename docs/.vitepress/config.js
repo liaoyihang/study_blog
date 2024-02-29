@@ -22,6 +22,7 @@ export default {
         items: [
           { text: 'JS数据类型', link: '/guide/js/data-type' },
           { text: '原型与原型链', link: '/guide/js/prototype' },
+          { text: '浮点数原理', link: '/guide/js/decimal' },
         ]
       },
       {
