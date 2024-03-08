@@ -1,8 +1,10 @@
 ---
 title: 模板语法原理
-titleTemplate: Vue3
+titleTemplate: Vue
 ---
-## Vue的模板语法
+# Vue的模板语法
+Vue 存在一个 Compile 模块，用于将 template 转换成 render 函数。本文将探索其如何转换。
+## 引子
 先思考几个问题
 - Vue的语法浏览器能不能识别？
 - Vue为什么可以使用双括号语法在HTML中使用变量？为什么原生JS不行？

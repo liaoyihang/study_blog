@@ -26,11 +26,18 @@ export default {
         ]
       },
       {
+        text: 'CSS基础',
+        items: [
+          { text: 'BFC块', link: '/guide/css/BFC' },
+        ]
+      },
+      {
         text: 'Vue',
         items: [
           { text: '响应式基础', link: '/guide/vue/reactive' },
           { text: '$nextTick原理', link: '/guide/vue/nexttick' },
           { text: '模板语法原理', link: '/guide/vue/template' },
+          { text: '虚拟Dom', link: '/guide/vue/vDom' },
         ]
       },
       {
