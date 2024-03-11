@@ -5,7 +5,14 @@ export default {
   base: '/study_blog.github.io/',
   themeConfig: {
     nav: [
-      { text: '导航栏选项一', link: '/guide', activeMatch: '/guide/what-is-vitepress' },
+      {
+        text: 'CSS', 
+        items: [
+          { text: 'CSS属性的计算过程', link: '/guide/css/style-computed' },
+          { text: '块级格式上下文', link: '/guide/css/BFC' },
+          { text: '包含块', link: '/guide/css/containing-block' },
+        ]
+      },
       { text: '导航栏选项二', link: '/guide', activeMatch: '/guide/what-is-vitepress' },
       { text: '导航栏选项三', link: '/guide', activeMatch: '/guide/what-is-vitepress' },
       {
@@ -28,7 +35,10 @@ export default {
       {
         text: 'CSS基础',
         items: [
-          { text: 'BFC块', link: '/guide/css/BFC' },
+          { text: 'CSS导航', link: '/guide/css/CSS-start' },
+          { text: 'CSS属性的计算过程', link: '/guide/css/style-computed' },
+          { text: '块级格式上下文', link: '/guide/css/BFC' },
+          { text: '包含块', link: '/guide/css/containing-block' },
         ]
       },
       {
