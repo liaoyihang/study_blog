@@ -48,6 +48,7 @@ export default {
           { text: '$nextTick原理', link: '/guide/vue/nexttick' },
           { text: '模板语法原理', link: '/guide/vue/template' },
           { text: '虚拟Dom', link: '/guide/vue/vDom' },
+          { text: 'Vue3 diff算法解析', link: '/guide/vue/vue3-diff' },
         ]
       },
       {
