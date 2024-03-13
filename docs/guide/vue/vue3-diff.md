@@ -64,7 +64,7 @@ titleTemplate: Vue
 3. 新节点中的未知序列，为 i 至 e2 之间的节点
 4. build key:index map for newChildren （从新节点的未知序列中，构建序号关系 keyToNewIndexMap）
 5. loop through old children left to be patched and try to patch （从旧节点的未知序列中，对比判断是否存在余 keyToNewIndexMap，不存在则移除，存在则记录二者序号关系 newIndexToOldIndexMap）
-6. 构建 newIndexToOldIndexMap 的最长递增序列 increasingNewIndexSequence
+6. 构建 newIndexToOldIndexMap 的最长递增序列 increasingNewIndexSequence（[最长递增子序列算法](increasing-sequence.md)）
 7. 移动并挂载最长递增序列，遍历新节点未知序列，
    1. 如果其在旧节点未知序列中不存在，则直接新增挂载，
    2. 反之则继续判断，其是否在最长递增序列中，
@@ -81,10 +81,3 @@ titleTemplate: Vue
 
 例子：abcdefg -> abxceyfg
 ![乱序对比](asset/diff/unknown-sequence.png "乱序对比")
-
-## 最长递增子序列算法
-在乱序对比的过程中，提到了一个最长递增子序列，接下来研究其算法原理。
-
-它是对数组的处理，它需要满足两个条件，一个是长，一个是递增。例如：
-1. [1, 2, 5, 6, 4]，它的最长递增子序列是 [1, 2, 5, 6]
-2. [3, 2, 8, 9, 5, 6, 7, 11, 15]，它的最长递增子序列是 [2, 5, 6, 7, 11, 15]

@@ -49,6 +49,7 @@ export default {
           { text: '模板语法原理', link: '/guide/vue/template' },
           { text: '虚拟Dom', link: '/guide/vue/vDom' },
           { text: 'Vue3 diff算法解析', link: '/guide/vue/vue3-diff' },
+          { text: '最长递增子序列算法', link: '/guide/vue/increasing-sequence' },
         ]
       },
       {
