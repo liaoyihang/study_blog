@@ -8,9 +8,9 @@ export default {
       {
         text: 'CSS', 
         items: [
-          { text: 'CSS属性的计算过程', link: '/guide/css/style-computed' },
+          // { text: 'CSS属性的计算过程', link: '/guide/css/style-computed' },
           { text: '块级格式上下文', link: '/guide/css/BFC' },
-          { text: '包含块', link: '/guide/css/containing-block' },
+          // { text: '包含块', link: '/guide/css/containing-block' },
         ]
       },
       { text: '导航栏选项二', link: '/guide', activeMatch: '/guide/what-is-vitepress' },
@@ -28,7 +28,7 @@ export default {
         text: 'JS基础',
         items: [
           { text: 'JS数据类型', link: '/guide/js/data-type' },
-          { text: '原型与原型链', link: '/guide/js/prototype' },
+          // { text: '原型与原型链', link: '/guide/js/prototype' },
           { text: '浮点数原理', link: '/guide/js/decimal' },
         ]
       },
@@ -36,9 +36,9 @@ export default {
         text: 'CSS基础',
         items: [
           { text: 'CSS导航', link: '/guide/css/CSS-start' },
-          { text: 'CSS属性的计算过程', link: '/guide/css/style-computed' },
+          // { text: 'CSS属性的计算过程', link: '/guide/css/style-computed' },
           { text: '块级格式上下文', link: '/guide/css/BFC' },
-          { text: '包含块', link: '/guide/css/containing-block' },
+          // { text: '包含块', link: '/guide/css/containing-block' },
         ]
       },
       {
@@ -49,29 +49,29 @@ export default {
           { text: '模板语法原理', link: '/guide/vue/template' },
           { text: '虚拟Dom', link: '/guide/vue/vDom' },
           { text: 'Vue3 diff算法解析', link: '/guide/vue/vue3-diff' },
-          { text: '最长递增子序列算法', link: '/guide/vue/increasing-sequence' },
+          // { text: '最长递增子序列算法', link: '/guide/vue/increasing-sequence' },
         ]
       },
       {
         text: '宿主环境',
         items: [
           { text: 'V8垃圾回收机制(简易版)', link: '/guide/environment/garbage-collection-easy' },
-          { text: '浏览器渲染原理', link: '/guide/environment/browser-render' },
-          { text: '事件循环', link: '/guide/environment/event-loop' },
+          // { text: '浏览器渲染原理', link: '/guide/environment/browser-render' },
+          // { text: '事件循环', link: '/guide/environment/event-loop' },
         ]
       },
       {
         text: '性能研究',
         items: [
           { text: '图片懒加载', link: '/guide/performance/img-lazy' },
-          { text: '虚拟列表', link: '/guide/performance/virtual-list' },
-          { text: '分片渲染', link: '/guide/performance/slice-render' },
+          // { text: '虚拟列表', link: '/guide/performance/virtual-list' },
+          // { text: '分片渲染', link: '/guide/performance/slice-render' },
         ]
       },
       {
         text: '网络通信',
         items: [
-          { text: 'Ajax', link: '/guide/network/ajax' },
+          // { text: 'Ajax', link: '/guide/network/ajax' },
         ]
       },
       {
